@@ -10,7 +10,17 @@ function setGradient(){
 	+color2.value
 	+")";
 
-	css.textContent = "background: "+body.style.background +";"
+	css.value = "background: "+body.style.background +";"
 }
 color1.addEventListener("input", setGradient)
 color2.addEventListener("input", setGradient)
+
+setGradient(); //calling it to set value on page load
+
+function clickToCopy() {
+	var copyText = document.getElementById("snippet");
+	copyText.select();
+	copyText.setSelectionRange(0, 99999)
+	document.execCommand("copy");
+	alert("Copied to clipboard!");
+  }
