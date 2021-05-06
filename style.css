@@ -2,34 +2,55 @@
 	padding:0px;
 	margin: 0px; 
 }
+body{
+	font-family: monospace;
+	display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
 #linearGradient{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
 	height: 100vh;
-	background: linear-gradient(to right, rgb(5, 28, 72), rgb(12, 97, 187));;
+	background: linear-gradient(to right, rgb(51, 0, 0), rgb(10, 10, 10));
 	color: rgba(0,0,0,0.5);
 	text-align: center;
-	font: 'Raleway', sans-serif;
-	top: 15%;
 	animation: back 2s 1;
 }
 h1{
 	color: #6ab04c;
-	font: 600 3.5em 'Raleway', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: .5em;
-	padding-top: 10vh;
+	font-family: monospace;
+    font-weight: 600;
+    font-size: 3em;
+	padding-top: 0;
 	width: 100%;
 	z-index: 1;
 	animation: text 2s 1;
+}
+.mainContainer{
+	border: 1px solid #ffffff2e;
+    border-radius: 8px;
+    height: auto;
+    max-width: 440px;
+    padding: 2em;
+	margin: 1em;
+	color: #c5c5c5;
+    background-color: #00000059;
 }
 .container{
 	transform: translate(0%,-10%);
 }
 .container2{
 	animation: cont 3s 1;
+	text-align: left;
 }
 .text2{
 	color: rgba(0,0,0,0.5);
-	font: 600 3em 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
 	text-transform: uppercase;
 	letter-spacing: .3em;
 	padding-top: 2vh;
@@ -37,33 +58,39 @@ h1{
 	animation: text2 3s 1;
 }
 h3{
-	padding: 20px;
+	padding: 20px 0 0 0;
 	font-weight: 900;
 	font-size: 2em;
-	letter-spacing: 0.01em;
-	text-transform:none;
-	letter-spacing: 0.1em;
 }
 input{
-	margin: 30px;
-	background: transparent;
-	border: none;
-	width: 4em;
-	height: 2em;
-	transition: 0.4s all;
+    background: transparent;
+    border: none;
+    width: 4em;
+    height: 4em;
+    transition: 0.1s all;
 }
 input:hover{
-	transform: scale(1.15);
-	cursor: pointer;
-	 background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+    transform: scale(1.1);
+    cursor: pointer;
+    background: #00000000;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px #ffffff5c;
 }
-@keyframes text{
+#snippet {
+    background: white;
+    border-radius: 2px;
+    width: 32em;
+    height: 1em;
+	font-family: monospace;
+}
+#snippet:hover{
+	transform: scale(1);
+    cursor: pointer;
+    background: black;
+    border-radius: 3px;
+}
+/* @keyframes text{
 	0%{
 		color: black;
 		margin-bottom: -60px;
@@ -109,4 +136,4 @@ input:hover{
 	50%{
 		opacity: 0;
 	}
-}
+} */
